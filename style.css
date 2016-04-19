@@ -1,0 +1,149 @@
+* {
+	font-size: 12px;
+	font-family: Lato;
+}
+	
+@media (max-width: 640px){
+	:root {
+	font-size: 16px;
+	}
+}
+body{
+    margin:0px;
+}
+main{
+	max-width: 1280px;
+	margin:0 auto;
+}
+header.global {
+    background-color: #000;
+    /*background-image: repeating-linear-gradient(45deg, transparent, transparent 2px, #444 2px, #444 4px);*/
+    display:block;
+    text-align:center;
+    border-top:1em solid #000;
+}
+
+h1:before {
+    content:"\3c";
+    color:#99001C;
+    font-weight:400;
+}
+
+h1:after {
+    content:"\3e";
+    color:#99001C;
+    font-weight:400;
+}
+
+h1.logo{
+    margin:0px;
+    color:#fff;
+    font-size:3rem;
+    font-weight:100;
+    display:inline;
+    -webkit-transition:all 0.7s ease;
+}
+
+h1.logo:hover {
+    text-shadow: 2px 2px 20px #99001C;
+}
+
+h1 {
+    font-size:2.5rem;
+    text-transform:uppercase;
+	margin:0px;
+}
+
+h1 a{
+    text-decoration:none;
+    color:#000;
+}
+
+.copy-content {
+	padding:2rem;
+}
+
+nav.global {
+    background-color:#000;
+    padding-bottom:10px;
+}
+
+nav.global a {
+    color:#fff;
+    text-decoration:none;
+    display:inline-block;
+    text-transform:uppercase;
+    font-size:1.5em;
+    margin:0px 20px;
+    -webkit-transition:all 0.3s;
+}
+nav.global a:hover{
+    text-decoration:underline;
+    
+}
+
+h2 {
+    text-transform:uppercase;
+}
+
+
+p {
+	font-size: 1.5rem;
+	margin:0px;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row-wrap;
+}
+
+.flex-item {
+	flex:1;
+	margin:0px;
+	flex-basis:0;
+	max-width:50%;
+
+
+}
+
+
+.flex-item img {
+	margin:0px;
+	max-width:100%;
+	height:auto;
+	vertical-align:middle;
+}
+
+@media (max-width: 750px){
+	.flex-container {
+		flex-direction: column;
+	}
+	h1.logo{
+		font-size:2.5rem;
+	}
+	.flex-item {
+		max-width:100%;
+	}
+	.flex-item.copy{
+		order:-1;
+	}
+	.copy-content {
+		padding:1rem;
+	}
+}
+
+footer {
+    background-color: #000;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 2px, #444 2px, #444 4px);
+    display:block;
+    text-align:center;
+    color:#fff;
+    border-top:1em solid #000;
+	height:8rem;
+}
+
+footer a {
+    color:#fff;
+	font-size:2rem;
+	text-decoration:none;
+}
